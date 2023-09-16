@@ -1,3 +1,6 @@
+//************************* Conversions *****************************************
+
+//conversion into numbers
 let score=49
 console.log(typeof score);
 console.log(typeof(score));
@@ -23,6 +26,8 @@ console.log( num);
 //false => 0
 //null =>0
 
+
+//conversion to booleans
 let isLoggedIn=1 
 let booleanIsLoggedIn=Boolean(isLoggedIn); //1 - true   0 - false 
 console.log(booleanIsLoggedIn);
@@ -36,6 +41,46 @@ console.log(booleanIsLoggedIn2);
 //"" - false
 // "ankit" - true
 
+
+// Conversion to strings
 let randomnum=33
 let stringnum=String(randomnum)
 console.log(stringnum + " " + typeof stringnum);
+
+
+//**************************************************** OPERATIONS ******************************************************
+
+let value=10
+let negvalue=-value
+console.log(negvalue);
+
+console.log(2+2);
+console.log(2-2);
+console.log(2*2);
+console.log(2**5);
+console.log(2/3);
+console.log(2%2);
+
+let str1="Ankit "
+let str2="Raj"
+let str3=str1+str2
+console.log(str3);
+
+
+//done do like this
+console.log("1"+2);
+console.log(1+"2");
+console.log("1"+2+2);
+console.log(1+2+"2");
+
+console.log(+true);
+console.log(+false);
+console.log(+"");
+console.log(+"wuwe");
+
+
+//prefix postfix
+let gameCounter=100;
+console.log(++gameCounter)
+console.log(gameCounter++)
+console.log(gameCounter);
