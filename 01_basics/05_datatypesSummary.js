@@ -57,3 +57,23 @@ console.log(typeof outsideTemp)
 console.log(typeof myFunc) //function object
 console.log(typeof heroes)
 console.log(typeof myObj)
+
+//********************************MEMORY************************************/
+
+let myName="Ankit"
+let myAnothername=myName //copy is passed
+myAnothername="Raj" //copy changed
+console.log(myName) //no change in original variable
+console.log(myAnothername)
+
+
+//Non primitive is created in heap
+let userOne={
+    email:"ankitraj@gmail.com",
+    upi:"900@axis"
+}
+let userTwo=userOne 
+userTwo.email="ak@gmail.com"
+
+console.log(userOne) // change in original value
+console.log(userTwo)
