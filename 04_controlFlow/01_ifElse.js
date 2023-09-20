@@ -23,3 +23,15 @@ if(temp==31){
 }else{
     console.log(`${temp} is less or more than 31`);
 }
+
+const balance=399;
+if(balance==300) console.log("nice amount");
+else if(balance>300) console.log("better");
+else console.log("Best");
+
+
+// && ||
+
+const isLoggedIn=true
+const debitCard=true
+if(isLoggedIn && debitCard) console.log("Allow shopping");
