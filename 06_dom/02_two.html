@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM TUT</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body class="bg-black">
+ 
+</body>
+
+<script>
+    const div=document.createElement('div')
+    console.log(div);
+    div.className='main'
+    div.id=Math.round(Math.random()*10+1)
+    div.setAttribute("title","generated title")
+    div.style.backgroundColor="orange"
+    div.style.padding="10px"
+  //  div.innerHTML="Hey this is div"
+    const addText=document.createTextNode("Ankit Raj JS repo")
+    div.appendChild(addText)
+    document.body.appendChild(div)
+</script>
+</html>
