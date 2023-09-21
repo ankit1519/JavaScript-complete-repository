@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM TUT chat n code</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+
+</body>
+<script>
+    function addLanguage(lang){
+        const element=document.createElement('li')
+        element.innerHTML=lang
+        document.querySelector('.language').appendChild(element)
+    }
+    //addLanguage("python")
+    //addLanguage("Scala")
+    function addLangOpti(lang){
+        const element=document.createElement('li')
+        element.appendChild(document.createTextNode(`${lang}`))
+        document.querySelector('.language').appendChild(element)
+    }
+    addLangOpti("Scala")
+    addLangOpti("Python")
+
+
+
+    //edit value
+    const secondLang=document.querySelector("li:nth-child(2)")
+    const newLi=document.createElement('li')
+    newLi.appendChild(document.createTextNode("New li"))
+    secondLang.replaceWith(newLi)
+
+    //edit
+    const firstLang=document.querySelector("li:first-child")
+    firstLang.outerHTML='<li>Typescript</li>'
+
+    //remove
+    const ll=document.querySelector('li:last-child')
+    ll.remove()
+</script>
+</html>
