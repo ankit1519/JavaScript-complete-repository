@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>async</title>
+</head>
+<body>
+    <h1>Async tutorial</h1>
+    <button class="stop" id="stop">stop</button>
+    <button class="start" id="start">start</button>
+</body>
+<script>
+    
+    document.querySelector('#start').addEventListener('click',function(){
+       let st= setInterval(function(){
+        console.log("Ankit Raj");
+        },2000)
+
+        document.querySelector('#stop').addEventListener('click',function(){
+            console.log('stopped');
+            clearInterval(st)
+       
+        })
+       
+    })
+    
+    
+</script>
+</html>
