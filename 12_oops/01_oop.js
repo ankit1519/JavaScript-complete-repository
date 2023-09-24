@@ -8,7 +8,7 @@ const user={
     }
 }
 user.getUserDetails();
-console.log(this);  // {}          in node
+console.log(this);                         // {}          in node
 
 
 //new and constructor
