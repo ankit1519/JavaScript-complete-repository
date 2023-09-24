@@ -24,3 +24,4 @@ console.log(user1);
 console.log(user2);
 
 //new creates constructor fun
+
