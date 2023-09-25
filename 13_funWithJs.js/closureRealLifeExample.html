@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <button id="orange">Orange</button>
+    <button id="green">green</button>
+</body>
+<script>
+   
+
+    function clickH(color){
+        //document.body.style.backgroundColor=`${color}`
+        return function() {
+            document.body.style.backgroundColor=`${color}`
+        }
+    }
+    document.getElementById('orange').onclick=clickH("orange")
+    document.getElementById('green').onclick=clickH("green")
+
+
+</script>
+</html>

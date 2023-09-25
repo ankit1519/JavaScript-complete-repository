@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="orange">Orange</button>
+    <button id="green">green</button>
+</body>
+<script>
+    function init(){
+        let name="ak"
+        function displayName(){
+            console.log(name);
+        }
+        displayName()
+    }
+
+    //lexical scoping
+    function outer(){
+        let n="ank"
+        function inner(){
+            console.log(n);
+        }
+       
+        inner()
+    }
+    outer()
+  //  console.log(n);
+
+
+
+
+
+  //closure
+
+  function func(){
+    const name="ankit raj executeddd closure"
+    function innerfunc(){
+        console.log(name);
+    }
+    return innerfunc;
+  }
+
+  const funcc=func()     //returns lexical scope
+  funcc()
+</script>
+</html>
